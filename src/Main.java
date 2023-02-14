@@ -94,13 +94,66 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача 6");
+
+        int banan = 5;          // Бананов всего
+        int vesbaban = 80;          // Вес одного банана
+        int moloko = 200;           // Молока всего
+        int vesmoloka = 105;        //Вес 100мл. молока
+        int morojenoe = 100;        // Вес 1го брикета мороженного
+        int morojenogovsego = 2;
+        int egg = 4;
+        int vesegg = 70;            // Вес 1го яйца
+        int banana = banan * vesbaban;              // Вес 5ти бананов
+        int milk = vesmoloka * 2;
+        int icecream = morojenoe * morojenogovsego;
+        int eggs = egg * vesegg;
+        int veszavtraka = banana + milk + icecream + eggs;          // Вес завтрака в граммах
+        double zavtrak = veszavtraka / 1000;
+        System.out.println("Вес спортзавтрака равен " + zavtrak + " кг. \n");
     }
 
     public static void task7() {
         System.out.println("Задача 7");
+
+        int nadopoxydet = 7;            // Надо похудеть на 7кг
+        int teraet = 250;           // В день теряет 250г
+        int xydet = nadopoxydet * 1000;         // Надо худеть в граммах
+        int vdnax = xydet / teraet;
+        System.out.println("В среднем " + vdnax + " дней надо чтобы похудеть на " + nadopoxydet + " кг., если терять в день по 250г");
+        teraet = 500;
+        vdnax = xydet / teraet;
+        System.out.println("В среднем " + vdnax + " дней надо чтобы похудеть на " + nadopoxydet + " кг., если терять в день по 500г \n");
     }
 
     public static void task8() {
         System.out.println("Задача 8");
+
+        int Masha = 67_760;
+        int Denis = 83_690;
+        int Kristina = 76_230;
+        int trary1 = Masha * 12;
+        int trary2 = Denis * 12;
+        int trary3 = Kristina * 12;
+        System.out.println("Годовой доход Маши до повышения зарплаты " + trary1);
+        System.out.println("Годовой доход Дениса до повышения зарплаты " + trary2);
+        System.out.println("Годовой доход Кристины до повышения зарплаты " + trary3 + "\n");
+        int povyshenie1 = Masha / 10;
+        int doxod1 = Masha + povyshenie1;
+        int trary4 = doxod1 * 12;
+        System.out.println("Годовой доход Маши после повышения зарплаты " + trary4);
+        int povyshenie2 = Denis / 10;
+        int doxod2 = Denis + povyshenie2;
+        int trary5 = doxod2 * 12;
+        System.out.println("Годовой доход Дениса после повышения зарплаты " + trary5);
+        int povyshenie3 = Kristina / 10;
+        int doxod3 = Kristina + povyshenie3;
+        int trary6 = doxod3 * 12;
+        System.out.println("Годовой доход Кристины после повышения зарплаты " + trary6 + "\n");
+        int raznica1 = trary4 - trary1;
+        int raznica2 = trary5 - trary2;
+        int raznica3 = trary6 - trary3;
+        System.out.println("Зарплата Маши повысилась на " + raznica1 + " в год");
+        System.out.println("Зарплата Дениса повысилась на " + raznica2 + " в год");
+        System.out.println("Зарплата Кристины повысилась на " + raznica3 + " в год");
     }
 }
